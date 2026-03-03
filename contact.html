@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Glow Website</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* MAIN CONTACT SECTION */
+        .contact-main {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            padding: 40px 0px 100px;
+        }
+
+        /* LEFT SECTION */
+        .contact-left {
+            width: 40%;
+            font-size: 16px;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .contact-left h3 {
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+
+        .contact-left a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        .icon {
+            margin-right: 6px;
+        }
+
+        /* RIGHT SECTION */
+        .contact-right {
+            width: 45%;
+        }
+
+        .contact-right h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .contact-right p {
+            margin-bottom: 25px;
+            color: #555;
+        }
+
+        /* Form */
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .row input {
+            width: 100%;
+            padding: 18px;
+            border: 1px solid #ccc;
+            border-radius: 35px;
+            outline: none;
+            font-size: 15px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 25px;
+            outline: none;
+            margin-top: 20px;
+            font-size: 15px;
+        }
+
+        .checkbox {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .checkbox a {
+            color: #000;
+            font-weight: 600;
+        }
+
+        /* Button */
+        .send-btn {
+            margin-top: 30px;
+            padding: 15px 45px;
+            border-radius: 40px;
+            border: none;
+            background: #000;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .send-btn:hover {
+            opacity: 0.8;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 900px) {
+            .contact-main {
+                flex-direction: column;
+                padding: 30px 20px;
+            }
+
+            .contact-left,
+            .contact-right {
+                width: 100%;
+            }
+        }
+        
+/* TABLET (max-width: 992px) */
+@media (max-width: 992px) {
+
+    nav {
+        padding: 20px;
+    }
+
+    .nav-center {
+        display: none; /* hide desktop menu */
+    }
+
+    .contact-main {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+
+    .contact-left,
+    .contact-right {
+        width: 100%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* MOBILE (max-width: 576px) */
+@media (max-width: 576px) {
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .contact-main {
+        padding: 20px;
+    }
+
+    .contact-left p,
+    .contact-right p {
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 130px;
+    }
+
+    .send-btn {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .newsletter-box {
+        flex-direction: column;
+    }
+
+    .newsletter-box input,
+    .newsletter-box button {
+        width: 100%;
+        border-radius: 30px;
+        margin-top: 10px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Luxe Glow</div>
+
+        <div class="nav-center">
+            <a href="index.html">HOME</a>
+            <a href="soapall.html">SHOP ALL</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="nav-right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <div style="position:relative;">
+                <i class="fa-regular fa-bag-shopping"></i>
+                <span class="cart-badge">0</span>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+    <section class="contact-main">
+        <!-- LEFT SIDE -->
+        <div class="contact-left">
+
+            <h3>Customer Care:</h3>
+
+            <p><span class="icon">📨</span> <strong>Email:</strong>
+                <a href="mailto:info.luxeglowofficial@gmail.com">ankitLuxeglowofficial@gmail.com</a>
+            </p>
+
+            <p><span class="icon">📞</span> <strong>Phone:</strong>
+                <a href="tel:6388519421">0328-63885194</a>
+            </p>
+
+            <p><span class="icon">📍</span> <strong>Address:</strong> Lahore</p>
+
+            <h3>Customer Support Hours Ghazipur:</h3>
+
+            <p><span class="icon">⏰</span> <strong>Monday – Friday:</strong>
+                9:00 AM – 6:00 PM (Your Time Zone)</p>
+
+            <p><span class="icon">📅</span> <strong>Weekends & Holidays:</strong> Closed
+                <em>(or specify if available)</em>
+            </p>
+
+            <h3>Connect with Us on Social Media:</h3>
+
+            <p>Stay updated with our latest skincare tips, product launches, and exclusive offers! Follow us on:</p>
+
+            <p><span class="icon">📸</span> <strong>Instagram:</strong>
+                <a href="#">Ankit@LuxeGlow</a>
+            </p>
+
+            <p><span class="icon">📘</span> <strong>Facebook:</strong>
+                <a href="#">LuxeGlow Skincare</a>
+            </p>
+
+            <p><span class="icon">📌</span> <strong>Pinterest:</strong>
+                <a href="#">LuxeGlow Beauty</a>
+            </p>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-right">
+            <h3>Contact Us</h3>
+            <p>Please submit all general enquiries in the contact form below and we look forward to hearing from you
+                soon.</p>
+
+            <form>
+                <div class="row">
+                    <input type="text" placeholder="Your name" required>
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+
+                <textarea placeholder="Enter please your message" required></textarea>
+
+                <div class="checkbox">
+                    <input type="checkbox" id="privacy">
+                    <label for="privacy">I agree to the <a href="#">Privacy Policy</a> of the website.</label>
+                </div>
+
+                <button class="send-btn">Send</button>
+            </form>
+        </div>
+    </section>
+
+
+    <footer class="lux-footer">
+        <div class="footer-container">
+
+            <!-- Left Section -->
+            <div class="footer-left">
+                <h2 class="footer-logo">Luxe Glow</h2>
+
+                <p class="footer-contact">0328-6008198</p>
+                <p class="footer-email">info.luxeglowofficial@gmail.com</p>
+
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/ankit-kumar-sharma07/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/ANKITSH11676909"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#">Order Policy</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Term of Service</a>
+                <a href="#">Exchange & Replacement Policy</a>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+                <h3>Sign Up to Newsletter</h3>
+                <p>Sign up for 10% off your first purchase and free shipping. Updates information on Sales and Offers.
+                </p>
+
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Enter your email...">
+                    <button>Sign Up</button>
+                </div>
+
+                <p class="footer-tnc">
+                    By entering the e-mail you accept the <span>terms and conditions</span> and the <span>privacy
+                        policy</span>.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Luxeglowofficial. All rights reserved. <br> contact me ank1372003@gmail.com <br> Phone:- 6388519421
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

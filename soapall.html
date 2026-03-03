@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxe Glow Website</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .product-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.product-heading {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.product-count {
+    margin-bottom: 20px;
+    color: #444;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.product-card {
+    position: relative;
+    background: #fff;
+    border-radius: 12px;
+    padding-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.product-img {
+    width: 100%;
+    border-radius: 12px 12px 0 0;
+}
+
+.discount-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #ff4d4d;
+    color: #fff;
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.product-title {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.price-box {
+    margin: 10px 0;
+}
+
+.new-price {
+    color: #d10000;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #777;
+    margin-left: 8px;
+}
+
+.add-btn {
+    width: 90%;
+    padding: 12px;
+    margin-top: 10px;
+    background: #000;
+    color: white;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+
+.add-btn:hover {
+    background: #444;
+}
+
+</style>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">Luxe Glow</div>
+
+        <div class="nav-center">
+            <a href="index.html">HOME</a>
+            <a href="#shop">SHOP ALL</a>
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="nav-right">
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <div style="position:relative;">
+                <i class="fa-regular fa-bag-shopping"></i>
+                <span class="cart-badge">0</span>
+            </div>
+        </div>
+    </nav>
+    <hr>
+
+
+
+    <section class="product-section" id="shop">
+    <h2 class="product-heading">Products</h2>
+
+    <div class="product-count">There are 3 results in total</div>
+
+    <div class="products-grid">
+
+        <!-- Product 1 -->
+        <div class="product-card">
+            <div class="discount-badge">-20%</div>
+            <img src="crd1.png" class="product-img" alt="All-In-One Serum">
+
+            <h3 class="product-title">All-In-One Serum</h3>
+
+            <div class="price-box">
+                <span class="new-price">Rs.1,464.00</span>
+                <span class="old-price">Rs.1,830.00</span>
+            </div>
+
+            <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <div class="discount-badge">-20%</div>
+            <img src="crd2.png" class="product-img" alt="Brightening Bundle">
+
+            <h3 class="product-title">Brightening Bundle</h3>
+
+            <div class="price-box">
+                <span class="new-price">Rs.2,520.00</span>
+                <span class="old-price">Rs.3,150.00</span>
+            </div>
+
+            <button class="add-btn">Add to Cart</button>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <div class="discount-badge">-20%</div>
+            <img src="crd3.png" class="product-img" alt="Brightening Moisturizer">
+
+            <h3 class="product-title">Brightening Moisturizer</h3>
+
+            <div class="price-box">
+                <span class="new-price">Rs.1,440.00</span>
+                <span class="old-price">Rs.1,800.00</span>
+            </div>
+
+            <button class="add-btn">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+    <footer class="lux-footer">
+        <div class="footer-container">
+
+            <!-- Left Section -->
+            <div class="footer-left">
+                <h2 class="footer-logo">Luxe Glow</h2>
+
+                <p class="footer-contact">0328-6008198</p>
+                <p class="footer-email">info.luxeglowofficial@gmail.com</p>
+
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/ankit-kumar-sharma07/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/ANKITSH11676909"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <a href="#">Order Policy</a>
+                <a href="#">Shipping Policy</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Term of Service</a>
+                <a href="#">Exchange & Replacement Policy</a>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-newsletter">
+                <h3>Sign Up to Newsletter</h3>
+                <p>Sign up for 10% off your first purchase and free shipping. Updates information on Sales and Offers.
+                </p>
+
+                <div class="newsletter-box">
+                    <input type="email" placeholder="Enter your email...">
+                    <button>Sign Up</button>
+                </div>
+
+                <p class="footer-tnc">
+                    By entering the e-mail you accept the <span>terms and conditions</span> and the <span>privacy
+                        policy</span>.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 Luxeglowofficial. All rights reserved. <br> contact me ank1372003@gmail.com <br> Phone:- 6388519421
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
